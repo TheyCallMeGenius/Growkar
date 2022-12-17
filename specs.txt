@@ -1,0 +1,1 @@
+BeginProblem Stipulation h#2 Option Variation NoBoard Variation Condition Forsyth 8/6b1/3ppp2/3pkp1Q/3ppp2/7K/4r3/6R1 EndProblem

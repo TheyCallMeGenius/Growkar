@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+<form method="POST">
+  <div class="form-row">
+    <div class="form-group col-md-8">
+      <label for="fen">FEN</label>
+      <input type="text" class="form-control" id="fen" name="fen">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="stipulation">Stipulation</label>
+      <input type="text" id="stipulation" class="form-control" name="stipulation">
+    </div>
+   </div>
+    <div class="form-row">
+    <div class="form-group col-md-5">
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#optionsinfo">Options<a class="fa fa-caret down"></a></button>
+  <div class="form-group collapse" id="optionsinfo">
+      {% for opt in option %}
+      <input type="checkbox" value="{{opt}}" name="Check">{{' '+opt}} <br>
+      {%endfor%}
+  </div></div>
+    <div class="form-group col-md-7">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#conditionsinfo">Conditions<a class="fa fa-caret down"></a></button>
+  <div class="form-group collapse" id="conditionsinfo">
+      {% for con in condition %}
+      <input type="checkbox" value="{{con}}" name="Checks">{{' '+con}} <br>
+      {%endfor%}
+    </div>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+</body>
+</html>
