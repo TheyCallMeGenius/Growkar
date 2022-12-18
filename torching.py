@@ -25,12 +25,12 @@ def form_example():
             options = options+str(a)+' '
         for a in checks:
             conditions = conditions+str(a)+' '
-        file = open("specs.txt", "r+")
-        file.write(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
-        print(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
-        file.close()
-        sui = popeyemaker(os.popen(f"py E:\\PythonWork\\PycharmProjects\\CodingProjects\\Popeye\\specs.txt").read())
-        return render_template("formreturned", sui=sui, stip=stip, fen=fen)
+        with open("specs.txt", "r+") as file:
+            file.write(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
+            print(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
+            file.close()
+            sui = popeyemaker(os.popen(f"py specs.txt").read())
+            return render_template("formreturned", sui=sui, stip=stip, fen=fen)
 
     return render_template("form.html", option = option, condition=condition)
 
