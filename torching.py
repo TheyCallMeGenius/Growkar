@@ -25,7 +25,7 @@ def form_example():
             options = options+str(a)+' '
         for a in checks:
             conditions = conditions+str(a)+' '
-        with open("specs.txt", "r+") as file:
+        with open("specs.txt", "w") as file:
             file.write(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
             print(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
             file.close()
