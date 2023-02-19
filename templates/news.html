@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+    </style>
+   </head>
+<body>
+<div class="w3-container w3-content">
+    <button class="accordion">CHESSCOM NEWS</button>
+    <div class="panel">
+    <!--CHESSCOM-->
+{% for i in range(3) %}
+        <div class="w3-third w3-card w3-padding-32">
+<center>
+<a href="{{chesscom[i][1]}}">
+<h4>{{chesscom[i][0]}}</h4><br>
+<img src="{{chesscom[i][2]}}" width="300" height="169"></a><br><br>
+<p>{{chesscom[i][3]}}</p></center>
+    </div>
+
+{%endfor%}
+
+    </div>
+    <hr>
+    <button class="accordion">CHESSBASE INDIA NEWS</button>
+    <div class="panel">
+    <!--CHESSBASE INDIA-->
+{% for i in range(3) %}
+        <div class="w3-third w3-card w3-padding-32">
+<center>
+<a href="{{chessbasein[i][1]}}">
+<h4>{{chessbasein[i][0]}}</h4><br>
+<img src="{{chessbasein[i][2]}}" width="300" height="169"></a><br><br>
+<p>{{chessbasein[i][3]|safe}}</p></center>
+    </div>
+
+{%endfor%}
+    </div><hr>
+ <button class="accordion">GM HIKARU VIDEOS</button>
+    <div class="panel">
+    <!--GM HIKARU-->
+
+    <iframe
+  src="https://www.youtube.com/embed?listType=playlist&list=UUweCc7bSMX5J4jEH7HFImng" allowfullscreen>
+</iframe>
+<iframe
+  src="https://www.youtube.com/embed?listType=playlist&list=UUweCc7bSMX5J4jEH7HFImng&index=2">
+</iframe>
+    <iframe
+  src="https://www.youtube.com/embed?listType=playlist&list=UUweCc7bSMX5J4jEH7HFImng&index=3">
+</iframe>
+    </div>
+</div>
+
+</body>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</html>

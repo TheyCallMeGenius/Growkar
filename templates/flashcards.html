@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard App</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Stylesheet -->
+      <style>
+          * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f7f9fd;
+}
+.container {
+  width: 90vw;
+  max-width: 62.5em;
+  position: relative;
+  margin: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#card-con {
+  margin-top: 1em;
+}
+.question-container {
+  width: 90vw;
+  max-width: 34em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em 2em;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+}
+.question-container h2 {
+  font-size: 2.2em;
+  color: #363d55;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.error-con {
+  align-self: center;
+}
+#error {
+  color: #ff5353;
+  font-weight: 400;
+}
+.fa-xmark {
+  font-size: 1.4em;
+  background-color: #587ef4;
+  height: 1.8em;
+  width: 1.8em;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+label {
+  color: #363d55;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+textarea {
+  width: 100%;
+  padding: 0.7em 0.5em;
+  border: 1px solid #d0d0d0;
+  outline: none;
+  color: #414a67;
+  border-radius: 0.3em;
+  resize: none;
+}
+textarea:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+textarea:focus {
+  border-color: #363d55;
+}
+#save-btn {
+  font-size: 1em;
+  background-color: #587ef4;
+  color: #ffffff;
+  padding: 0.6em 0;
+  border-radius: 0.3em;
+  font-weight: 600;
+}
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.08);
+  padding: 1.2em;
+  border-radius: 0.4em;
+}
+.question-div,
+.answer-div {
+  text-align: justify;
+}
+.question-div {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  color: #363d55;
+}
+.answer-div {
+  margin-top: 1em;
+  font-weight: 400;
+  color: #414a67;
+}
+.show-hide-btn {
+  display: block;
+  background-color: #587ef4;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.6em 0;
+  border-radius: 0.3em;
+}
+.buttons-con {
+  display: flex;
+  justify-content: flex-end;
+}
+.edit,
+.delete {
+  background-color: transparent;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+.edit {
+  color: #587ef4;
+}
+.delete {
+  color: #ff5353;
+}
+.hide {
+  display: none;
+}
+#SUI{
+opacity: 0;
+}
+footer {
+  position: absolute;
+  bottom: 25%;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+      </style>
+  </head>
+  <body>        <center>
+
+    <div class="container">
+      <!-- Display Card of Question And Answers Here -->
+      <div id="card-con">
+            <div class="w3-card w3-round" onclick="toggleClock()">
+                <center>{{num}}<h1>{{word}}</h1>
+                    <h4 id="SUI">{{definition}}</h4></center>
+            </div>
+        </div>
+ </div>
+                <footer>
+          <a href="{{url_for('flashcardmaker', number=num-1)}}" class="w3-button"><-- Previous</a>
+          <a href="{{url_for('flashcardmaker', number=num+1)}}" class="w3-button">Next --></a></footer>
+    </center>
+    <!-- Input form for users to fill question and answer
+    <div class="question-container hide" id="add-question-card">
+      <h2>Add Flashcard</h2>
+      <div class="wrapper">
+         Error message
+        <div class="error-con">
+          <span class="hide" id="error">Input fields cannot be empty!</span>
+        </div>
+         Close Button
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+      </div>
+
+      <label for="question">Question:</label>
+      <textarea
+        class="input"
+        id="question"
+        placeholder="Type the question here..."
+        rows="2"
+      ></textarea>
+      <label for="answer">Answer:</label>
+      <textarea
+        class="input"
+        id="answer"
+        rows="4"
+        placeholder="Type the answer here..."
+      ></textarea>
+      <button id="save-btn">Save</button>
+    </div>-->
+  </body>
+<script>
+      function toggleClock() {
+    var myClock = document.getElementById('SUI');
+    var displaySetting = myClock.style.opacity;
+    if (displaySetting == "1") {
+      myClock.style.opacity = "0";
+    }
+    else {
+      myClock.style.opacity = "1";
+    }
+  }
+</script>
+</html>
