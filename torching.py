@@ -1,47 +1,132 @@
-from flask import Flask, render_template, url_for, redirect, flash, request
-import os
+from flask import Flask, render_template
+import random
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "veryverysecret"
+
+file = open('definiwordstxt',"r", encoding="utf-8")
+content = file.readlines()
+quizzer = {}
+for line in content:
+    word, definition = line.strip().split('##')
+    quizzer[word] = definition
 
 
-@app.route('/query-example')
-def query_example():
-    return 'Query String Example'
+@app.route('/economics/<int:number>')
+def flashcardmaker(number):
+    if number > 269:
+        number = 1
+    elif number<1:
+        number = 269
+    # read the content of the file opened
+
+    # read 10th line from the file
+    word, definition = content[number-1].strip().split('##')
+    return render_template('flashcards.html', word=word, definition=definition, num = number)
+
+showAnswer = None
+
+@app.route('/quizzer')
+def quizzers():
+    global showAnswer
+    answera = None
+    answerb = None
+    answerc = None
+    answerd = None
+    ca = None
+    word, definition = random.choice(list(quizzer.items()))
+    rando = random.randint(1, 4)
+    if rando == 1:
+        answera = definition
+        answerb = random.choice(list(quizzer.values()))
+        answerc = random.choice(list(quizzer.values()))
+        answerd = random.choice(list(quizzer.values()))
+        ca = 'ansa'
+    if rando == 2:
+        answera = random.choice(list(quizzer.values()))
+        answerb = definition
+        answerc = random.choice(list(quizzer.values()))
+        answerd = random.choice(list(quizzer.values()))
+        ca = 'ansb'
+    if rando == 3:
+        answera = random.choice(list(quizzer.values()))
+        answerb = random.choice(list(quizzer.values()))
+        answerc = definition
+        answerd = random.choice(list(quizzer.values()))
+        ca = 'ansc'
+    if rando == 4:
+        answera = random.choice(list(quizzer.values()))
+        answerb = random.choice(list(quizzer.values()))
+        answerc = random.choice(list(quizzer.values()))
+        answerd = definition
+        ca = 'ansd'
+
+    return render_template("quizzer.html", perhaps = False, question=word, answera=answera,
+                           answerb=answerb, answerc=answerc, answerd=answerd, showAnswer=showAnswer,
+                           correctAnswer = ca)
+
+@app.route('/checkanswer/<word>/<answer>')
+def checkanswer(word, answer):
+    global showAnswer
+    if quizzer[word] == answer:
+        showAnswer = True
+    else:
+        showAnswer = False
+    quizzers()
 
 
-@app.route('/', methods=['POST', 'GET'])
-def form_example():
-    option = ['Try', 'SetPlay', 'Variation', 'NoWk', 'NoBk', 'Duplex', 'NoThreat']
-    condition = ['AlphabeticChess', 'AndernachChess', 'AntiCirce', 'Breton', 'Circe', 'Influencer', 'MakeTakeChess', 'SuperGuards', 'TakeMakeChess' 'Volage']
-    if request.method == "POST":
-        options = ''
-        conditions = ''
-        stip = request.form.get('stipulation')
-        fen = request.form.get('fen')
-        checkboxes = request.form.getlist('Check')
-        checks = request.form.getlist('Checks')
-        for a in checkboxes:
-            options = options+str(a)+' '
-        for a in checks:
-            conditions = conditions+str(a)+' '
-        with open("specs.txt", "w") as file:
-            file.write(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
-            print(f"BeginProblem Stipulation {stip} Option " + options + f"NoBoard Variation Condition " + conditions + f"Forsyth {fen} EndProblem")
-            file.close()
-            sui = popeyemaker(os.popen(f"py specs.txt").read())
-            return render_template("formreturned", sui=sui, stip=stip, fen=fen)
+@app.route('/english/<int:number>')
+def flashcardmakers(number):
+    if number > 51:
+        number = 1
+    elif number<1:
+        number = 51
+    # read the content of the file opened
+    file = open('englishwords.txt',"r", encoding="utf-8")
+    content = file.readlines()
+    print(content[number-1])
+    # read 10th line from the file
+    print(content)
+    return render_template('englishflashcard.html', cont=content[number-1], num = number)
 
-    return render_template("form.html", option = option, condition=condition)
 
-def popeyemaker(s):
-    n = "\n".join(s.split("\n")[2:])
-    n = n[:n.rfind('\n')]
-    n = n[:n.rfind('\n')]
-    n = n[:n.rfind('\n')]
-    n = n[:n.rfind('\n')]
-    return n
+import requests
+from bs4 import BeautifulSoup as bs
+def get_chess_com():
+    chesscom = requests.get("https://www.chess.com/news")
+    soupc = bs(chesscom.content, features="html.parser")
+    s = soupc.find_all('article')
+    chesscom = {}
+    for i in range(3):
+        l = s[i].find('a')
+        q = l.find('img')
+        n = s[i].find('p')
+        chesscom[i] = [q['alt'], l['href'], q['src'], n.string]
+    return chesscom
+
+def get_chessbase_in():
+    chessbasein = requests.get("https://chessbase.in/")
+    soupc = bs(chessbasein.content, features="html.parser")
+    s = soupc.find_all('article')
+    chessbase = {}
+    for i in range(3):
+        l = s[i].find('a')
+        q = s[i].find('img')
+        n = s[i].find('div')
+        n = n.find('p')
+        h1 = s[i].find('h1')
+        chessbase[i] = [h1.string, 'https://chessbase.in' + l['href'], q['src'], n]
+    print(chessbase)
+    return chessbase
+
+
+@app.route('/')
+@app.route('/news')
+def news():
+    chessbasindia = get_chessbase_in()
+    chesscom = get_chess_com()
+    return render_template('news.html', chesscom=chesscom, chessbasein=chessbasindia)
+
+
 
 if __name__ == '__main__':
-    # run app in debug mode on port 5000
     app.run()
