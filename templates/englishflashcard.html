@@ -105,9 +105,10 @@ footer {
     <div class="container">
       <!-- Display Card of Question And Answers Here
       <div id="card-con">-->
-                {% autoescape false %}
-        <center><a style="font-size:25px;">{{num}}</a><br><a id="outer" style="font-size:80px;">{{cont|safe}}</a>
-                    {% endautoescape %}
+        <center><a style="font-size:25px;">{{num}}</a>
+                {% for word in cont %}
+        <br><a id="outer" style="font-size:80px;" href="{{url_for('englishdef', word=word)}}">{{word}}</a>
+                    {% endfor %}
 
                  <!--<h4 id="SUI">{{definition}}</h4>--></center>
             </div>
