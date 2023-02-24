@@ -140,6 +140,20 @@ def news():
     chesscom = get_chess_com()
     return render_template('news.html', chesscom=chesscom, chessbasein=chessbasindia)
 
+@app.route('/dictionary/<word>')
+def englishdef(word):
+    chesscom = requests.get("https://www.merriam-webster.com/dictionary/" + word)
+    soupc = bs(chesscom.content, features="html.parser")
+    s = soupc.find_all('span', attrs={"class":"dt"})
+    q=''
+    n=0
+
+    for t in s:
+        n+=1
+        print(str(t))
+        if n != len(s):
+            q+=str(t)
+    return q
 
 
 if __name__ == '__main__':
