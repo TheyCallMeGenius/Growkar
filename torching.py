@@ -89,20 +89,6 @@ def flashcardmakers(number):
 import requests
 from bs4 import BeautifulSoup as bs
 
-@app.route('/englishdef/<word>')
-def englishdef(word):
-    dic = PyDictionary()
-    t = ''
-    defi = dic.meaning(word)
-    for key, value in defi.items():
-        # put the key header in textbox
-        t+= f'{key}<br><br>'
-
-        for values in value:
-            t+= f'- {values}<br><br>'
-    return t
-
-
 
 def get_chess_com():
     chesscom = requests.get("https://www.chess.com/news")
