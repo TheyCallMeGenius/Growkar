@@ -1,51 +1,51 @@
-Bravery<br>Courage<br>Valor<br>Fortitude<br>Mettle<br>Tenacity<br>Intrepidity<br>Dauntlessness<br>Fearlessness<br>Prowess<br>Gallantry<br>Spunk<br>Heroism<br>Guts
-Holy<br>Sacred<br>Hallowed<br>Apotheosize<br>Revered<br>Sacrosanct<br>Sanctified<br>Divine<br>Venerated<br>Sacramental<br>Consecrated<br>PutOnPedestal
-Incoherent<br>Cryptic<br>Inscrutable<br>Incomprehensive<br>Inexplicable<br>Arcane<br>Muddled
-Complex<br>Arcane<br>Labyrinthine<br>Esoteric<br>Muddled<br>Intricate<br>Obscure<br>Abstruse<br>Recondite
-Induce<br>Begin<br>Inflame<br>Spur<br>Actuate<br>Incite<br>Influence<br>Persuade<br>Provoke<br>Stimulate<br>Instigate<br>Kindle<br>Inspire<br>Foment<br>Impel
-Succulent<br>Palatable<br>Delectable<br>Nectarous<br>Scrumptious<br>Delicious<br>Flavoursome<br>Savoury<br>Toothsome<br>Appetizing<br>Luscious<br>Piquant<br>Yummy
-Pompous<br>Garish<br>Grandiose<br>Conspicuous<br>Exhibitionistic<br>Ostentatious<br>Pretentious<br>Flamboyant<br>Showy<br>Gaudy
-Spat<br>Quarrel<br>Dissension<br>Wrangle<br>Argument<br>Embroilment<br>Fracas<br>Altercation<br>Bickering<br>Tiff<br>Polemic<br>Brawl<br>Feud<br>Squabble
-Traitor<br>Deserter<br>Turncoat<br>Apostate<br>Recalcitrant<br>Blasphemous<br>Insurgent<br>Heretic<br>Renegade<br>Dissenter<br>Rebel<br>Defector
-Follower<br>Disciple<br>Protégé<br>Student<br>Probationer<br>Apprentice<br>Sophomore<br>Mentee<br>Rookie<br>Greenhorn
-Luck<br>Serendipity<br>Fortuity<br>Happenstance<br>Fortuitous<br>Coincidence<br>Fluke<br>Inadvertent
-Splendid<br>Plush<br>Posh<br>Opulent<br>Sumptuous<br>Extravagant<br>Magnificent<br>Lavish<br>Profusive<br>Palatial<br>Ritzy<br>Luxurious<br>Elegant
-Pristine<br>Flawless<br>Fleckless<br>Unerring<br>Impeccable<br>Unimpeachable<br>Immaculate<br>Unsullied<br>Unblemished<br>Spotless<br>Undefiled
-Pique<br>Bugged<br>Irked<br>Irritated<br>Chagrined<br>Rile<br>Peeved<br>Exasperated<br>Miffed<br>Displeased<br>Annoyed<br>Offended<br>Vexed<br>Nettle
-Forgo<br>Resign<br>Abjure<br>Abnegate<br>Renounce<br>Relinquish<br>Abdicate<br>Quit<br>Repudiate<br>Forsake<br>Abandon
-Apathetic<br>Stolid<br>Indifferent<br>Indomitable<br>Unemotional<br>Imperturbable<br>Lackadaisical<br>Poker-Faced<br>Languid<br>Aloof<br>Phlegmatic
-Calm<br>Tranquil<br>Placid<br>Harmonious<br>Halcyon<br>Serene<br>Poise<br>Stoic
-Virtuoso<br>Deft<br>Expert<br>Dexterous<br>Professional<br>Adroit<br>Crackerjack<br>Savvy<br>Adept<br>Proficient<br>Ace
-Amiable<br>Jovial<br>Affable<br>Congenial<br>Amicable<br>Convivial<br>Genial<br>Cordial
-Reckless<br>Foolhardy<br>Desultory<br>Impetuous<br>Nonchalant<br>Lackadaisical<br>Perfunctory<br>Derelict<br>Negligent<br>Impetuous<br>Imprudent<br>Cursory<br>Remiss<br>Careless
-Enraged<br>Indignant<br>Furious<br>Wrathful<br>Angry<br>Exasperated<br>Infuriated<br>Incensed<br>Outraged<br>Irate<br>Offended
-Skinflint<br>Thrifty<br>Tightfisted<br>Frugal<br>Miser<br>Penny-Pincher<br>Scrooge<br>Cheapstake<br>Hoarder<br>Niggard<br>Harpy<br>Tightwad<br>Stingy
-Ruminate<br>Meditate<br>Deliberate<br>Contemplate<br>Brainstorm<br>Muse<br>Ponder<br>Cerebrate<br>Cogitate
-Eccentric<br>Egocentric<br>Selfcentered<br>Idiosyncratic<br>Egomaniac<br>Narcissist<br>Quirky
-Jubilant<br>Upbeat<br>Ecstatic<br>Cheerful<br>Exultant<br>Rapturous<br>Elated<br>Delighted<br>Euphoric<br>Rejoice<br>Gleeful<br>Blissful
-Uncouth<br>Baseborn<br>Rabble<br>Masses<br>Plebeian<br>Lowclass<br>Hoipolloi<br>Populace<br>Proletarian<br>Commoner<br>Rustic
-Innate<br>Endemic<br>Inherent<br>Aboriginal<br>Chthonic<br>Autochthonous<br>Inbred<br>Indigenous<br>Domestic<br>Inborn<br>Native
-Lying<br>Sham<br>Canard<br>Chicanery<br>Fraudulence<br>Prevarication<br>Deceit<br>Mendacity<br>Treachery
-Idiotic<br>Blockhead<br>Foolish<br>Stupid<br>Inane<br>Imbecile<br>Asinine<br>Fatuous<br>Harebrained<br>Dimwit<br>Nitwit<br>Dunce<br>Birdbrain<br>Dullard<br>Daft<br>Simpleton<br>Ignoramus
-Joker<br>Wag<br>Zany<br>Clown<br>Quipster<br>Comedian<br>Buffoon<br>Farceur<br>Twerp<br>Harlequin<br>Jester
-Belief<br>Race<br>Tenet<br>Cult<br>Faction<br>Religion<br>Ideology<br>Faith<br>Doctrine<br>Caste<br>Creed<br>Dogma<br>Sect<br>Clan
-Hidden<br>Secret<br>Cloaked<br>Surreptitious<br>Furtive<br>Stealthy<br>Covert<br>Masked<br>Sneaking<br>Concealed<br>Clandestine
-Cute<br>Seraphic<br>Childlike<br>Innocent<br>Heavenly<br>Beatific<br>Adorable<br>Cherubic<br>Lovable<br>Angelic
-Control<br>Hegemony<br>Preeminence<br>Authority<br>Supremacy<br>Dominion<br>Dominance<br>Sovereignty
-Adhoc<br>Makeshift<br>Temporary<br>Stopgap<br>Interim<br>Contingent<br>Tentative<br>Provisional
-Lazy<br>Torpid<br>Indolent<br>Laggard<br>Procrastinator<br>Sluggish<br>Lethargic<br>Languid<br>Slothful<br>Lackadaisical
-Banned<br>Forbidden<br>Verboten<br>Interdicted<br>Outlawed<br>Blackmarket<br>Bootleg<br>Smuggled<br>Contraband<br>Proscribed<br>Illegal<br>Prohibited<br>Illicit
-Pacify<br>Satisfy<br>Content<br>Placate<br>Satiate<br>Propitiate<br>Gratify<br>Appease<br>Quench
-Extra<br>Repetitive<br>Redundant<br>Tautological<br>Superfluous<br>Palaver<br>Reiterate
-Prolong<br>Protract<br>Defer<br>Suspend<br>Postpone<br>Abeyance<br>Adjourn<br>Prorogue<br>Shelve
-Example<br>Prototype<br>Paradigm<br>Embodiment<br>Quintessence<br>Exemplar<br>Epitome<br>Paragon<br>Archetype
-Labyrinthine<br>Serpentine<br>Sinuous<br>Oblique<br>Ambagious<br>Meandering<br>Devious<br>Convoluted<br>Tortuous<br>Circuitous
-Stalemate<br>Standstill<br>Standoff<br>Predicament<br>Checkmate<br>Deadend<br>Catch22<br>Impasse<br>Deadlock
-Clear<br>Limpid<br>Semitransparent<br>Seethrough<br>Diaphanous<br>Translucid<br>Pellucid<br>Semiopaque<br>Translucent<br>Crystalline
-Strong<br>Potent<br>Cogent<br>Powerful<br>Stalwart<br>Forcible<br>Mighty<br>Efficacious<br>Puissant
-Insane<br>Lunatic<br>Berserk<br>Crazed<br>Nuts<br>Schizoid<br>Psychotic<br>Demented<br>Irrational<br>Moonstruck<br>Unhinged<br>Maniacal<br>Unsound<br>Deranged
-Stage<br>Dais<br>Arena<br>Coliseum<br>Amphitheatre<br>Auditorium<br>Podium<br>Rostrum<br>Stadium
-Promote<br>Advertise<br>Announce<br>Notify<br>Propagate<br>Annunciate<br>Communicate<br>Declare<br>Proclaim<br>Promulgate<br>Publicize<br>Divulge<br>Disseminate
-Old<br>Ancient<br>Antique<br>Bygone<br>Aboriginal<br>Obsolete<br>Aged<br>Primitive<br>Prehistoric<br>Hoary<br>Primeval<br>Primordial<br>Archaic<br>Antiquated<br>Antediluvian<br>Immemorial
-Weak<br>Tender<br>Dainty<br>Flimsy<br>Brittle<br>Feeble<br>Frangible<br>Frail<br>Infirm<br>Fragile<br>Delicate<br>Impuissant
-Whisper<br>Mutter<br>Murmur<br>Rustle<br>Whir<br>Burble<br>Rumble<br>Mumble<br>Susurration
+Bravery Courage Valor Fortitude Mettle Tenacity Intrepidity Dauntlessness Fearlessness Prowess Gallantry Spunk Heroism Guts
+Holy Sacred Hallowed Apotheosize Revered Sacrosanct Sanctified Divine Venerated Sacramental Consecrated PutOnPedestal
+Incoherent Cryptic Inscrutable Incomprehensive Inexplicable Arcane Muddled
+Complex Arcane Labyrinthine Esoteric Muddled Intricate Obscure Abstruse Recondite
+Induce Begin Inflame Spur Actuate Incite Influence Persuade Provoke Stimulate Instigate Kindle Inspire Foment Impel
+Succulent Palatable Delectable Nectarous Scrumptious Delicious Flavoursome Savoury Toothsome Appetizing Luscious Piquant Yummy
+Pompous Garish Grandiose Conspicuous Exhibitionistic Ostentatious Pretentious Flamboyant Showy Gaudy
+Spat Quarrel Dissension Wrangle Argument Embroilment Fracas Altercation Bickering Tiff Polemic Brawl Feud Squabble
+Traitor Deserter Turncoat Apostate Recalcitrant Blasphemous Insurgent Heretic Renegade Dissenter Rebel Defector
+Follower Disciple Protégé Student Probationer Apprentice Sophomore Mentee Rookie Greenhorn
+Luck Serendipity Fortuity Happenstance Fortuitous Coincidence Fluke Inadvertent
+Splendid Plush Posh Opulent Sumptuous Extravagant Magnificent Lavish Profusive Palatial Ritzy Luxurious Elegant
+Pristine Flawless Fleckless Unerring Impeccable Unimpeachable Immaculate Unsullied Unblemished Spotless Undefiled
+Pique Bugged Irked Irritated Chagrined Rile Peeved Exasperated Miffed Displeased Annoyed Offended Vexed Nettle
+Forgo Resign Abjure Abnegate Renounce Relinquish Abdicate Quit Repudiate Forsake Abandon
+Apathetic Stolid Indifferent Indomitable Unemotional Imperturbable Lackadaisical Poker-Faced Languid Aloof Phlegmatic
+Calm Tranquil Placid Harmonious Halcyon Serene Poise Stoic
+Virtuoso Deft Expert Dexterous Professional Adroit Crackerjack Savvy Adept Proficient Ace
+Amiable Jovial Affable Congenial Amicable Convivial Genial Cordial
+Reckless Foolhardy Desultory Impetuous Nonchalant Lackadaisical Perfunctory Derelict Negligent Impetuous Imprudent Cursory Remiss Careless
+Enraged Indignant Furious Wrathful Angry Exasperated Infuriated Incensed Outraged Irate Offended
+Skinflint Thrifty Tightfisted Frugal Miser Penny-Pincher Scrooge Cheapstake Hoarder Niggard Harpy Tightwad Stingy
+Ruminate Meditate Deliberate Contemplate Brainstorm Muse Ponder Cerebrate Cogitate
+Eccentric Egocentric Selfcentered Idiosyncratic Egomaniac Narcissist Quirky
+Jubilant Upbeat Ecstatic Cheerful Exultant Rapturous Elated Delighted Euphoric Rejoice Gleeful Blissful
+Uncouth Baseborn Rabble Masses Plebeian Lowclass Hoipolloi Populace Proletarian Commoner Rustic
+Innate Endemic Inherent Aboriginal Chthonic Autochthonous Inbred Indigenous Domestic Inborn Native
+Lying Sham Canard Chicanery Fraudulence Prevarication Deceit Mendacity Treachery
+Idiotic Blockhead Foolish Stupid Inane Imbecile Asinine Fatuous Harebrained Dimwit Nitwit Dunce Birdbrain Dullard Daft Simpleton Ignoramus
+Joker Wag Zany Clown Quipster Comedian Buffoon Farceur Twerp Harlequin Jester
+Belief Race Tenet Cult Faction Religion Ideology Faith Doctrine Caste Creed Dogma Sect Clan
+Hidden Secret Cloaked Surreptitious Furtive Stealthy Covert Masked Sneaking Concealed Clandestine
+Cute Seraphic Childlike Innocent Heavenly Beatific Adorable Cherubic Lovable Angelic
+Control Hegemony Preeminence Authority Supremacy Dominion Dominance Sovereignty
+Adhoc Makeshift Temporary Stopgap Interim Contingent Tentative Provisional
+Lazy Torpid Indolent Laggard Procrastinator Sluggish Lethargic Languid Slothful Lackadaisical
+Banned Forbidden Verboten Interdicted Outlawed Blackmarket Bootleg Smuggled Contraband Proscribed Illegal Prohibited Illicit
+Pacify Satisfy Content Placate Satiate Propitiate Gratify Appease Quench
+Extra Repetitive Redundant Tautological Superfluous Palaver Reiterate
+Prolong Protract Defer Suspend Postpone Abeyance Adjourn Prorogue Shelve
+Example Prototype Paradigm Embodiment Quintessence Exemplar Epitome Paragon Archetype
+Labyrinthine Serpentine Sinuous Oblique Ambagious Meandering Devious Convoluted Tortuous Circuitous
+Stalemate Standstill Standoff Predicament Checkmate Deadend Catch22 Impasse Deadlock
+Clear Limpid Semitransparent Seethrough Diaphanous Translucid Pellucid Semiopaque Translucent Crystalline
+Strong Potent Cogent Powerful Stalwart Forcible Mighty Efficacious Puissant
+Insane Lunatic Berserk Crazed Nuts Schizoid Psychotic Demented Irrational Moonstruck Unhinged Maniacal Unsound Deranged
+Stage Dais Arena Coliseum Amphitheatre Auditorium Podium Rostrum Stadium
+Promote Advertise Announce Notify Propagate Annunciate Communicate Declare Proclaim Promulgate Publicize Divulge Disseminate
+Old Ancient Antique Bygone Aboriginal Obsolete Aged Primitive Prehistoric Hoary Primeval Primordial Archaic Antiquated Antediluvian Immemorial
+Weak Tender Dainty Flimsy Brittle Feeble Frangible Frail Infirm Fragile Delicate Impuissant
+Whisper Mutter Murmur Rustle Whir Burble Rumble Mumble Susurration
