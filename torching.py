@@ -83,14 +83,28 @@ def flashcardmakers(number):
     # read the content of the file opened
     file = open('englishwords.txt',"r", encoding="utf-8")
     content = file.readlines()
-    print(content[number-1])
-    # read 10th line from the file
-    print(content)
-    return render_template('englishflashcard.html', cont=content[number-1], num = number)
+    t = content[number-1].strip().split(' ')
+    return render_template('englishflashcard.html', cont=t, num = number)
 
-
+from PyDictionary import PyDictionary
 import requests
 from bs4 import BeautifulSoup as bs
+
+@app.route('/englishdef/<word>')
+def englishdef(word):
+    dic = PyDictionary()
+    t = ''
+    defi = dic.meaning(word)
+    for key, value in defi.items():
+        # put the key header in textbox
+        t+= f'{key}<br><br>'
+
+        for values in value:
+            t+= f'- {values}<br><br>'
+    return t
+
+
+
 def get_chess_com():
     chesscom = requests.get("https://www.chess.com/news")
     soupc = bs(chesscom.content, features="html.parser")
@@ -126,20 +140,6 @@ def news():
     chesscom = get_chess_com()
     return render_template('news.html', chesscom=chesscom, chessbasein=chessbasindia)
 
-from PyDictionary import PyDictionary
-
-@app.route('/englishdef/<word>')
-def englishdef(word):
-    dic = PyDictionary()
-    t = ''
-    defi = dic.meaning(word)
-    for key, value in defi.items():
-        # put the key header in textbox
-        t+= f'{key}<br><br>'
-
-        for values in value:
-            t+= f'- {values}<br><br>'
-    return t
 
 
 if __name__ == '__main__':
