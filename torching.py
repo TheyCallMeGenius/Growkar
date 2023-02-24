@@ -126,6 +126,20 @@ def news():
     chesscom = get_chess_com()
     return render_template('news.html', chesscom=chesscom, chessbasein=chessbasindia)
 
+from PyDictionary import PyDictionary
+
+@app.route('/englishdef/<word>')
+def englishdef(word):
+    dic = PyDictionary()
+    t = ''
+    defi = dic.meaning(word)
+    for key, value in defi.items():
+        # put the key header in textbox
+        t+= f'{key}<br><br>'
+
+        for values in value:
+            t+= f'- {values}<br><br>'
+    return t
 
 
 if __name__ == '__main__':
