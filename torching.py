@@ -86,7 +86,6 @@ def flashcardmakers(number):
     t = content[number-1].strip().split(' ')
     return render_template('englishflashcard.html', cont=t, num = number)
 
-from PyDictionary import PyDictionary
 import requests
 from bs4 import BeautifulSoup as bs
 
