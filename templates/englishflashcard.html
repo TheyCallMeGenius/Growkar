@@ -105,12 +105,14 @@ footer {
 
     <div class="container">
       <!-- Display Card of Question And Answers Here
-      <div id="card-con">--><center>
+      <div id="card-con">-->
+                <a style="font-size:50px;">{{num}}</a>
+
+        <center>
                 {% for word in cont %}
         <br><a id="outer" style="font-size:65px;" href="{{url_for('englishdef', word=word)}}">{{word|safe}}</a>
                     {% endfor %}
         <br>
-        <a style="font-size:50px;">{{num}}</a></center>
 
             </div>
        <a style="font-size:40px; color: white;" href="{{url_for('flashcardmakers', number=num+1)}}" class="w3-button">----></a>
