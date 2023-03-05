@@ -133,16 +133,16 @@ def news():
 @app.route('/dictionary/<word>')
 def englishdef(word):
     global engwords
-    if word.find("-->✓"):
-        word = word.replace("-->✓", "")
+    if word.find("✓"):
+        word = word.replace("✓", "")
     chesscom = requests.get("https://www.merriam-webster.com/dictionary/" + word)
     soupc = bs(chesscom.content, features="html.parser")
     s = soupc.find_all('span', attrs={"class":"dt"})
     q=''
     n=0
-    if engwords.find(word+"-->✓") == -1:
+    if engwords.find(word+"✓") == -1:
         print("HERE")
-        r = engwords.replace(word, word+"-->✓")
+        r = engwords.replace(word, word+"✓")
         engwords = r
     for t in s:
         n+=1
