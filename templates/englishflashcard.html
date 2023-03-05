@@ -108,7 +108,7 @@ footer {
       <div id="card-con">-->
         <center><a style="font-size:25px;">{{num}}</a>
                 {% for word in cont %}
-        <br><a id="outer" style="font-size:80px;" href="{{url_for('englishdef', word=word)}}">{{word}}</a>
+        <br><a id="outer" style="font-size:80px;" href="{{url_for('englishdef', word=word)}}">{{word|safe}}</a>
                     {% endfor %}
 
                  <!--<h4 id="SUI">{{definition}}</h4>--></center>
