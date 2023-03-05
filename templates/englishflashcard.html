@@ -101,7 +101,8 @@ footer {
 </style>
 </head>
 <body>
-  <center>
+      <a style="font-size:40px; color: white;" href="{{url_for('flashcardmakers', number=num-1)}}" class="w3-button"><----</a>
+
     <div class="container">
       <!-- Display Card of Question And Answers Here
       <div id="card-con">-->
@@ -112,13 +113,8 @@ footer {
 
                  <!--<h4 id="SUI">{{definition}}</h4>--></center>
             </div>
+       <a style="font-size:40px; color: white;" href="{{url_for('flashcardmakers', number=num+1)}}" class="w3-button">----></a>
 
-      <footer>
-          <a style="font-size:40px;" href="{{url_for('flashcardmakers', number=num-1)}}" class="w3-button"><-- Previous</a>
-          <a style="font-size:40px;" href="{{url_for('flashcardmakers', number=num+1)}}" class="w3-button">Next --></a></footer>
-
-
-    </center>
 </body>
 <script>
 $(document).ready(function () {
