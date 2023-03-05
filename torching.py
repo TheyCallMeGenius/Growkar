@@ -14,7 +14,7 @@ engwords = "Bravery Courage Valor Fortitude Mettle Tenacity Intrepidity Dauntles
 
 @app.route('/english/code')
 def code():
-    return f"<code>{engwords}</code>
+    return f"<code>{engwords}</code>"
 
 
 @app.route('/economics/<int:number>')
